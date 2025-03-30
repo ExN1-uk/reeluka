@@ -11,6 +11,10 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import AboutUs from "./pages/AboutUs";
+import WhatWeDo from "./pages/WhatWeDo";
+import OurWork from "./pages/OurWork";
+import Clients from "./pages/Clients";
 
 const queryClient = new QueryClient();
 
@@ -25,8 +29,12 @@ const App = () => (
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/what-we-do" element={<WhatWeDo />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/partners" element={<Partners />} />
+              <Route path="/our-work" element={<OurWork />} />
+              <Route path="/clients" element={<Clients />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
             </Routes>

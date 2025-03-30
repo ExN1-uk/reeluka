@@ -58,6 +58,22 @@ const Index = () => {
     }
   ];
 
+  // Core values
+  const coreValues = [
+    {
+      title: "Excellence & Integrity",
+      description: "We hold ourselves to the highest standards of technical expertise and ethical business practices in everything we do."
+    },
+    {
+      title: "Innovation & Adaptability",
+      description: "We embrace change and continuously seek better ways to serve our clients with cutting-edge solutions."
+    },
+    {
+      title: "Client-Centric Partnership",
+      description: "We measure our success by our clients' success, building long-term relationships based on trust and results."
+    }
+  ];
+
   return (
     <div className="min-h-screen">
       <HeroSection />
@@ -89,7 +105,7 @@ const Index = () => {
 
           <div className="text-center mt-12">
             <Link to="/projects">
-              <Button className="bg-brand-blue hover:bg-brand-darkBlue">
+              <Button className="bg-brand-gold hover:bg-opacity-90 text-white">
                 View All Projects
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -119,6 +135,43 @@ const Index = () => {
               </div>
             ))}
           </div>
+          
+          <div className="text-center mt-10">
+            <Link to="/what-we-do">
+              <Button variant="outline" className="border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-white">
+                Learn More About Our Services
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Core Values</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              These principles guide our decisions and define how we work with our clients and partners.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {coreValues.map((value, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-sm border-t-4 border-brand-gold">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">{value.title}</h3>
+                <p className="text-gray-600">{value.description}</p>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-10">
+            <Link to="/about">
+              <Button variant="outline" className="border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-white">
+                Learn More About Us
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -139,6 +192,39 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Client Logos Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Clients</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              We're proud to work with leading organizations across various industries.
+            </p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-sm">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+              {/* These would normally be client logos */}
+              {Array.from({ length: 8 }).map((_, index) => (
+                <div key={index} className="flex items-center justify-center p-2">
+                  <div className="h-16 w-32 bg-gray-100 rounded flex items-center justify-center">
+                    <span className="text-gray-400 text-sm">Client Logo</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          <div className="text-center mt-10">
+            <Link to="/clients">
+              <Button className="bg-brand-gold hover:bg-opacity-90 text-white">
+                View All Clients
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -148,7 +234,7 @@ const Index = () => {
               Contact us today to discuss how we can help your organization leverage modern technology for business success.
             </p>
             <Link to="/contact">
-              <Button className="bg-brand-blue hover:bg-brand-darkBlue text-white px-8 py-6 text-lg">
+              <Button className="bg-brand-gold hover:bg-opacity-90 text-white px-8 py-6 text-lg">
                 Get in Touch
               </Button>
             </Link>

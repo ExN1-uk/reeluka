@@ -14,19 +14,19 @@ const Footer = () => {
               Providing robust and innovative IT solutions tailored to meet your business needs.
             </p>
             <div className="flex items-center mb-2">
-              <Mail className="h-5 w-5 mr-2 text-brand-lightBlue" />
+              <Mail className="h-5 w-5 mr-2 text-brand-gold" />
               <a href="mailto:reelukainvestments@gmail.com" className="text-gray-400 hover:text-white">
                 reelukainvestments@gmail.com
               </a>
             </div>
             <div className="flex items-center mb-2">
-              <Phone className="h-5 w-5 mr-2 text-brand-lightBlue" />
+              <Phone className="h-5 w-5 mr-2 text-brand-gold" />
               <a href="tel:+260968565695" className="text-gray-400 hover:text-white">
                 +260 968 565695
               </a>
             </div>
             <div className="flex items-center">
-              <MapPin className="h-5 w-5 mr-2 text-brand-lightBlue" />
+              <MapPin className="h-5 w-5 mr-2 text-brand-gold" />
               <span className="text-gray-400">Woodlands, Lusaka, Zambia</span>
             </div>
           </div>
@@ -38,7 +38,19 @@ const Footer = () => {
                 <Link to="/" className="text-gray-400 hover:text-white">Home</Link>
               </li>
               <li>
+                <Link to="/about" className="text-gray-400 hover:text-white">About Us</Link>
+              </li>
+              <li>
+                <Link to="/what-we-do" className="text-gray-400 hover:text-white">What We Do</Link>
+              </li>
+              <li>
                 <Link to="/projects" className="text-gray-400 hover:text-white">Projects</Link>
+              </li>
+              <li>
+                <Link to="/our-work" className="text-gray-400 hover:text-white">Our Work</Link>
+              </li>
+              <li>
+                <Link to="/clients" className="text-gray-400 hover:text-white">Our Clients</Link>
               </li>
               <li>
                 <Link to="/partners" className="text-gray-400 hover:text-white">Partners</Link>

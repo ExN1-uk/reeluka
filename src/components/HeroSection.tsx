@@ -17,7 +17,7 @@ const HeroSection = () => {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <Link to="/projects">
-              <Button className="bg-white text-brand-blue hover:bg-blue-50 font-semibold text-base px-6 py-6">
+              <Button className="bg-brand-gold text-white hover:bg-opacity-90 font-semibold text-base px-6 py-6">
                 Explore Our Projects
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -33,8 +33,8 @@ const HeroSection = () => {
       
       {/* Background decorative elements */}
       <div className="hidden lg:block absolute right-0 top-0 h-full w-2/5">
-        <div className="absolute right-20 top-20 w-64 h-64 bg-blue-400 rounded-full opacity-10"></div>
-        <div className="absolute right-60 bottom-20 w-40 h-40 bg-blue-300 rounded-full opacity-10"></div>
+        <div className="absolute right-20 top-20 w-64 h-64 bg-brand-gold rounded-full opacity-10"></div>
+        <div className="absolute right-60 bottom-20 w-40 h-40 bg-brand-blue rounded-full opacity-10"></div>
       </div>
     </div>
   );

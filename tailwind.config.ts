@@ -64,11 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					blue: '#0050B3',
-					lightBlue: '#1890FF',
-					darkBlue: '#003A8C',
-					gray: '#8E9196',
-					green: '#52C41A'
+					gold: '#D4A017', // Gold color from logo
+					blue: '#4169B2',  // Blue color from logo
+					darkBlue: '#2A4374',
+					black: '#000000',
+					gray: '#8E9196'
 				}
 			},
 			fontFamily: {
